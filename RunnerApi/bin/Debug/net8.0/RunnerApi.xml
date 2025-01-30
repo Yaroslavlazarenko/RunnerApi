@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RunnerApi</name>
+    </assembly>
+    <members>
+        <member name="T:RunnerApi.Controllers.RaceController">
+            <summary>
+            Контроллер для управления гонками.
+            </summary>
+        </member>
+        <member name="M:RunnerApi.Controllers.RaceController.#ctor(MediatR.IMediator)">
+            <summary>
+            Инициализирует новый экземпляр контроллера для работы с гонками.
+            </summary>
+            <param name="mediator">Медиатор для отправки команд и запросов.</param>
+        </member>
+        <member name="M:RunnerApi.Controllers.RaceController.GetById(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Получение информации о гонке по ID.
+            </summary>
+            <param name="id">Идентификатор гонки.</param>
+            <param name="cancellationToken">Токен отмены запроса.</param>
+            <returns>Информация о гонке, если найдена, иначе 404.</returns>
+        </member>
+        <member name="M:RunnerApi.Controllers.RaceController.GetPage(Core.DTOs.RaceDtos.GetRacesPageDto,System.Threading.CancellationToken)">
+            <summary>
+            Получение страницы гонок с пагинацией.
+            </summary>
+            <param name="getRacesPageDto">DTO с параметрами для пагинации и сортировки.</param>
+            <param name="cancellationToken">Токен отмены запроса.</param>
+            <returns>Список гонок на текущей странице.</returns>
+        </member>
+        <member name="M:RunnerApi.Controllers.RaceController.Add(Core.DTOs.RaceDtos.RaceDto,System.Threading.CancellationToken)">
+            <summary>
+            Добавление новой гонки.
+            </summary>
+            <param name="raceDto">DTO с данными для создания новой гонки.</param>
+            <param name="cancellationToken">Токен отмены запроса.</param>
+            <returns>Данные о созданной гонке.</returns>
+        </member>
+        <member name="M:RunnerApi.Controllers.RaceController.Delete(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Удаление гонки по ID.
+            </summary>
+            <param name="id">Идентификатор гонки, которую нужно удалить.</param>
+            <param name="cancellationToken">Токен отмены запроса.</param>
+            <returns>Информация об удаленной гонке.</returns>
+        </member>
+        <member name="M:RunnerApi.Controllers.RaceController.StartRace(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Запуск гонки по ID.
+            </summary>
+            <param name="raceId">Идентификатор гонки, которую нужно запустить.</param>
+            <param name="cancellationToken">Токен отмены запроса.</param>
+            <returns>Информация о начале гонки.</returns>
+        </member>
+        <member name="T:RunnerApi.Controllers.RaceStatisticController">
+            <summary>
+            Контроллер для управления статистикой гонок.
+            </summary>
+        </member>
+        <member name="M:RunnerApi.Controllers.RaceStatisticController.#ctor(MediatR.IMediator)">
+            <summary>
+            Инициализирует новый экземпляр контроллера для работы со статистикой гонок.
+            </summary>
+            <param name="mediator">Медиатор для отправки команд и запросов.</param>
+        </member>
+        <member name="M:RunnerApi.Controllers.RaceStatisticController.GetById(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Получение статистики гонки по ID.
+            </summary>
+            <param name="id">Идентификатор статистики гонки.</param>
+            <param name="cancellationToken">Токен отмены запроса.</param>
+            <returns>Статистика гонки, если найдена, иначе 404.</returns>
+        </member>
+        <member name="M:RunnerApi.Controllers.RaceStatisticController.GetStatisticsByRaceId(Core.DTOs.RaceStatisticDtos.GetAllRaceStatisticsByRaceIdDto,System.Threading.CancellationToken)">
+            <summary>
+            Получение статистики по гонке по её ID.
+            </summary>
+            <param name="getAllRaceStatisticsByRaceIdDto">DTO с параметрами для получения статистики гонки.</param>
+            <param name="cancellationToken">Токен отмены запроса.</param>
+            <returns>Список статистики для указанной гонки.</returns>
+        </member>
+        <member name="M:RunnerApi.Controllers.RaceStatisticController.GetPage(Core.DTOs.RaceStatisticDtos.GetRaceStatisticPageDto,System.Threading.CancellationToken)">
+            <summary>
+            Получение статистики гонок с пагинацией.
+            </summary>
+            <param name="getRaceStatisticPageDto">DTO с параметрами для пагинации статистики гонок.</param>
+            <param name="cancellationToken">Токен отмены запроса.</param>
+            <returns>Статистика гонок на текущей странице.</returns>
+        </member>
+        <member name="M:RunnerApi.Controllers.RaceStatisticController.Add(Core.DTOs.RaceStatisticDtos.RaceStatisticDto,System.Threading.CancellationToken)">
+            <summary>
+            Добавление новой статистики для гонки.
+            </summary>
+            <param name="request">DTO с данными для создания новой статистики гонки.</param>
+            <param name="cancellationToken">Токен отмены запроса.</param>
+            <returns>Данные о созданной статистике гонки.</returns>
+        </member>
+        <member name="M:RunnerApi.Controllers.RaceStatisticController.Delete(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Удаление статистики гонки по ID.
+            </summary>
+            <param name="id">Идентификатор статистики гонки, которую нужно удалить.</param>
+            <param name="cancellationToken">Токен отмены запроса.</param>
+            <returns>Информация об удаленной статистике гонки.</returns>
+        </member>
+        <member name="T:RunnerApi.Controllers.RunnerController">
+            <summary>
+            Контроллер для управления бегунами.
+            </summary>
+        </member>
+        <member name="M:RunnerApi.Controllers.RunnerController.#ctor(MediatR.IMediator)">
+            <summary>
+            Инициализирует новый экземпляр контроллера для работы с бегунами.
+            </summary>
+            <param name="mediator">Медиатор для отправки команд и запросов.</param>
+        </member>
+        <member name="M:RunnerApi.Controllers.RunnerController.GetById(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Получение бегуна по ID.
+            </summary>
+            <param name="id">Идентификатор бегуна.</param>
+            <param name="cancellationToken">Токен отмены запроса.</param>
+            <returns>Бегун с указанным ID или 404, если не найден.</returns>
+        </member>
+        <member name="M:RunnerApi.Controllers.RunnerController.GetPage(Core.DTOs.RunnerDtos.GetRunnersPageDto,System.Threading.CancellationToken)">
+            <summary>
+            Получение списка бегунов с пагинацией.
+            </summary>
+            <param name="getRunnersPageDto">DTO с параметрами для пагинации бегунов.</param>
+            <param name="cancellationToken">Токен отмены запроса.</param>
+            <returns>Страница с бегунами или 404, если бегуны не найдены.</returns>
+        </member>
+        <member name="M:RunnerApi.Controllers.RunnerController.Add(Core.DTOs.RunnerDtos.RunnerDto,System.Threading.CancellationToken)">
+            <summary>
+            Добавление нового бегуна.
+            </summary>
+            <param name="runnerDto">DTO с данными нового бегуна.</param>
+            <param name="cancellationToken">Токен отмены запроса.</param>
+            <returns>Созданный бегун или 400, если создание не удалось.</returns>
+        </member>
+        <member name="M:RunnerApi.Controllers.RunnerController.Update(Core.DTOs.RunnerDtos.UpdateRunnerDto,System.Threading.CancellationToken)">
+            <summary>
+            Обновление информации о бегуне.
+            </summary>
+            <param name="updateRunnerDto">DTO с обновленными данными бегуна.</param>
+            <param name="cancellationToken">Токен отмены запроса.</param>
+            <returns>Обновленный бегун или 404, если бегун не найден.</returns>
+        </member>
+        <member name="M:RunnerApi.Controllers.RunnerController.Delete(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Удаление бегуна по ID.
+            </summary>
+            <param name="id">Идентификатор бегуна, которого нужно удалить.</param>
+            <param name="cancellationToken">Токен отмены запроса.</param>
+            <returns>Информация об удаленном бегуне или 404, если бегун не найден.</returns>
+        </member>
+        <member name="T:RunnerApi.Filters.ExceptionFilter">
+            <summary>
+            Фильтр для обработки исключений в приложении.
+            </summary>
+        </member>
+        <member name="M:RunnerApi.Filters.ExceptionFilter.#ctor(Microsoft.Extensions.Logging.ILogger{RunnerApi.Filters.ExceptionFilter},Microsoft.Extensions.Hosting.IHostEnvironment)">
+            <summary>
+            Инициализирует новый экземпляр фильтра исключений.
+            </summary>
+            <param name="logger">Логгер для записи ошибок.</param>
+            <param name="hostEnvironment">Информация о текущем окружении приложения.</param>
+        </member>
+        <member name="M:RunnerApi.Filters.ExceptionFilter.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)">
+            <summary>
+            Метод, вызываемый при возникновении исключения.
+            </summary>
+            <param name="context">Контекст исключения, содержащий информацию об ошибке.</param>
+        </member>
+        <member name="T:RunnerApi.Middlewares.AppMiddleware">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:RunnerApi.Middlewares.AppMiddleware.#ctor(Microsoft.Extensions.Logging.ILogger{RunnerApi.Middlewares.AppMiddleware})">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:RunnerApi.Middlewares.AppMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="next"></param>
+        </member>
+        <member name="T:RunnerApi.Middlewares.GlobalExceptionHandlingMiddleware">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:RunnerApi.Middlewares.GlobalExceptionHandlingMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger{RunnerApi.Middlewares.GlobalExceptionHandlingMiddleware})">
+            <summary>
+            
+            </summary>
+            <param name="next"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:RunnerApi.Middlewares.GlobalExceptionHandlingMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            
+            </summary>
+            <param name="httpContext"></param>
+        </member>
+    </members>
+</doc>

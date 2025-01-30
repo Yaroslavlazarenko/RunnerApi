@@ -1,0 +1,15 @@
+C:\Users\Thief\RiderProjects\RunnerApi\Persistance\bin\Debug\net8.0\Persistance.deps.json
+C:\Users\Thief\RiderProjects\RunnerApi\Persistance\bin\Debug\net8.0\Persistance.dll
+C:\Users\Thief\RiderProjects\RunnerApi\Persistance\bin\Debug\net8.0\Persistance.pdb
+C:\Users\Thief\RiderProjects\RunnerApi\Persistance\bin\Debug\net8.0\Core.dll
+C:\Users\Thief\RiderProjects\RunnerApi\Persistance\bin\Debug\net8.0\Core.pdb
+C:\Users\Thief\RiderProjects\RunnerApi\Persistance\obj\Debug\net8.0\Persistance.csproj.AssemblyReference.cache
+C:\Users\Thief\RiderProjects\RunnerApi\Persistance\obj\Debug\net8.0\Persistance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Thief\RiderProjects\RunnerApi\Persistance\obj\Debug\net8.0\Persistance.AssemblyInfoInputs.cache
+C:\Users\Thief\RiderProjects\RunnerApi\Persistance\obj\Debug\net8.0\Persistance.AssemblyInfo.cs
+C:\Users\Thief\RiderProjects\RunnerApi\Persistance\obj\Debug\net8.0\Persistance.csproj.CoreCompileInputs.cache
+C:\Users\Thief\RiderProjects\RunnerApi\Persistance\obj\Debug\net8.0\Persista.3F568332.Up2Date
+C:\Users\Thief\RiderProjects\RunnerApi\Persistance\obj\Debug\net8.0\Persistance.dll
+C:\Users\Thief\RiderProjects\RunnerApi\Persistance\obj\Debug\net8.0\refint\Persistance.dll
+C:\Users\Thief\RiderProjects\RunnerApi\Persistance\obj\Debug\net8.0\Persistance.pdb
+C:\Users\Thief\RiderProjects\RunnerApi\Persistance\obj\Debug\net8.0\ref\Persistance.dll
